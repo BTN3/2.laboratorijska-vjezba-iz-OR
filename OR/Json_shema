@@ -1,15 +1,22 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
+  "$id" : "https://github.com/BTN3/2.laboratorijska-vjezba-iz-OR/tree/master",
   "type": "array",
+  "title": "OR Knjige",
+  "description": "Skup knjiga za otvoreno računarstvo.",
   "items": [
     {
       "type": "object",
       "properties": {
         "isbn": {
-          "type": "string"
+          "type": "string",
+		  "title": "Isbn",
+		  "description":"kljuc knjige"
         },
         "naziv_knjige": {
-          "type": "string"
+          "type": "string",
+		  "title": "Naziv Knjige",
+		  "description": "Naziv Knjige"
         },
         "autor": {
           "type": "array",
@@ -18,13 +25,19 @@
               "type": "object",
               "properties": {
                 "Ime:": {
-                  "type": "string"
+                  "type": "string",
+				  "title": "Ime autora",
+				  "description": "Ime autora knjige"
                 },
                 "Prezime:": {
-                  "type": "string"
+                   "type": "string",
+				  "title": "Prezime autora",
+				  "description": "Prezime autora knjige"
                 },
                 "datum:": {
-                  "type": "string"
+                  "type": "string",
+				  "title": "Datum",
+				  "description": "datum rodjenja autora"
                 }
               },
               "required": [
@@ -36,14 +49,20 @@
             {
               "type": "object",
               "properties": {
-                "Ime:": {
-                  "type": "string"
+                 "Ime:": {
+                  "type": "string",
+				  "title": "Ime autora",
+				  "description": "Ime autora knjige"
                 },
-                "Prezime:": {
-                  "type": "string"
+               "Prezime:": {
+                   "type": "string",
+				  "title": "Prezime autora",
+				  "description": "Prezime autora knjige"
                 },
                 "datum:": {
-                  "type": "string"
+                  "type": "string",
+				  "title": "Datum",
+				  "description": "datum rodjenja autora"
                 }
               },
               "required": [
@@ -55,28 +74,44 @@
           ]
         },
         "drzava_nastanka": {
-          "type": "string"
+          "type": "string",
+		  "title": "Drzava nastanka",
+		  "description": "Gdje je knjiga napisana"
         },
         "jezik": {
-          "type": "string"
+         "type": "string",
+		  "title": "Jezik",
+		  "description": "Jezik na kojem je knjiga napisana"
         },
         "izdavacka_kuca": {
-          "type": "string"
+         "type": "string",
+		  "title": "Izdavacka kuca",
+		  "description": "agencija koja je izdala knjigu"
         },
         "datum_izdavanja": {
-          "type": "string"
+          "type": "string",
+		  "title": "Datum izdavanja",
+		  "description": "datum izdavanja prve knjige"
         },
         "broj_stranica": {
-          "type": "integer"
+          "type": "integer",
+		  "title": "Broj stranica",
+		  "description": "broj stranica knjige"
         },
         "uvez": {
-          "type": "string"
+          "type": "string",
+		  "title": "Uvez",
+		  "description": "vrsta uveza knjige"
         },
         "wikipedia": {
-          "type": "string"
+          "type": "string",
+		  "title": "Wikipedia stranica",
+		  "description": "link na wikipedia stranicu"
         },
         "zanr": {
-          "type": "string"
+          "type": "string",
+		  "title:": "Zanr knjige",
+		  "description": "Zanr knjige"
         }
       },
       "required": [
@@ -97,10 +132,14 @@
       "type": "object",
       "properties": {
         "isbn": {
-          "type": "string"
+          "type": "string",
+		  "title": "Isbn",
+		  "description":"kljuc knjige"
         },
-        "naziv_knjige": {
-          "type": "string"
+         "naziv_knjige": {
+          "type": "string",
+		  "title": "Naziv Knjige",
+		  "description": "Naziv Knjige"
         },
         "autor": {
           "type": "array",
@@ -108,14 +147,20 @@
             {
               "type": "object",
               "properties": {
-                "Ime:": {
-                  "type": "string"
+                 "Ime:": {
+                  "type": "string",
+				  "title": "Ime autora",
+				  "description": "Ime autora knjige"
                 },
                 "Prezime:": {
-                  "type": "string"
+                   "type": "string",
+				  "title": "Prezime autora",
+				  "description": "Prezime autora knjige"
                 },
-                "datum:": {
-                  "type": "string"
+                 "datum:": {
+                  "type": "string",
+				  "title": "Datum",
+				  "description": "datum rodjenja autora"
                 }
               },
               "required": [
@@ -127,28 +172,44 @@
           ]
         },
         "drzava_nastanka": {
-          "type": "string"
+          "type": "string",
+		  "title:": "Drzava nastanka",
+		  "description": "Gdje je knjiga napisana"
         },
-        "jezik": {
-          "type": "string"
+       "jezik": {
+         "type": "string",
+		  "title:": "Jezik",
+		  "description": "Jezik na kojem je knjiga napisana"
         },
         "izdavacka_kuca": {
-          "type": "string"
+         "type": "string",
+		  "title:": "Izdavacka kuca",
+		  "description": "agencija koja je izdala knjigu"
         },
-        "datum_izdavanja": {
-          "type": "string"
+         "datum_izdavanja": {
+          "type": "string",
+		  "title": "Datum izdavanja",
+		  "description": "datum izdavanja prve knjige"
         },
-        "broj_stranica": {
-          "type": "integer"
+         "broj_stranica": {
+          "type": "integer",
+		  "title": "Broj stranica",
+		  "description": "broj stranica knjige"
         },
-        "uvez": {
-          "type": "string"
+         "uvez": {
+          "type": "string",
+		  "title:": "Uvez",
+		  "description": "vrsta uveza knjige"
         },
         "wikipedia": {
-          "type": "string"
+          "type": "string",
+		  "title:": "Wikipedia stranica",
+		  "description": "link na wikipedia stranicu"
         },
-        "zanr": {
-          "type": "string"
+       "zanr": {
+          "type": "string",
+		  "title:": "Zanr knjige",
+		  "description": "Zanr knjige"
         }
       },
       "required": [
@@ -169,10 +230,14 @@
       "type": "object",
       "properties": {
         "isbn": {
-          "type": "string"
+          "type": "string",
+		  "title": "Isbn",
+		  "description":"kljuc knjige"
         },
         "naziv_knjige": {
-          "type": "string"
+          "type": "string",
+		  "title": "Naziv Knjige",
+		  "description": "Naziv Knjige"
         },
         "autor": {
           "type": "array",
@@ -180,14 +245,20 @@
             {
               "type": "object",
               "properties": {
-                "Ime:": {
-                  "type": "string"
+                 "Ime:": {
+                  "type": "string",
+				  "title": "Ime autora",
+				  "description": "Ime autora knjige"
                 },
                 "Prezime:": {
-                  "type": "string"
+                   "type": "string",
+				  "title": "Prezime autora",
+				  "description": "Prezime autora knjige"
                 },
-                "datum:": {
-                  "type": "string"
+                 "datum:": {
+                  "type": "string",
+				  "title": "Datum",
+				  "description": "datum rodjenja autora"
                 }
               },
               "required": [
@@ -199,14 +270,20 @@
             {
               "type": "object",
               "properties": {
-                "Ime:": {
-                  "type": "string"
+                 "Ime:": {
+                  "type": "string",
+				  "title": "Ime autora",
+				  "description": "Ime autora knjige"
                 },
                 "Prezime:": {
-                  "type": "string"
+                   "type": "string",
+				  "title": "Prezime autora",
+				  "description": "Prezime autora knjige"
                 },
-                "datum:": {
-                  "type": "string"
+                 "datum:": {
+                  "type": "string",
+				  "title": "Datum",
+				  "description": "datum rodjenja autora"
                 }
               },
               "required": [
@@ -218,28 +295,44 @@
           ]
         },
         "drzava_nastanka": {
-          "type": "string"
+          "type": "string",
+		  "title:": "Drzava nastanka",
+		  "description": "Gdje je knjiga napisana"
         },
         "jezik": {
-          "type": "string"
+         "type": "string",
+		  "title:": "Jezik",
+		  "description": "Jezik na kojem je knjiga napisana"
         },
-        "izdavacka_kuca": {
-          "type": "string"
+         "izdavacka_kuca": {
+         "type": "string",
+		  "title": "Izdavacka kuca",
+		  "description": "agencija koja je izdala knjigu"
         },
-        "datum_izdavanja": {
-          "type": "string"
+         "datum_izdavanja": {
+          "type": "string",
+		  "title": "Datum izdavanja",
+		  "description": "datum izdavanja prve knjige"
         },
-        "broj_stranica": {
-          "type": "integer"
+         "broj_stranica": {
+          "type": "integer",
+		  "title": "Broj stranica",
+		  "description": "broj stranica knjige"
         },
-        "uvez": {
-          "type": "string"
+         "uvez": {
+          "type": "string",
+		  "title:": "Uvez",
+		  "description": "vrsta uveza knjige"
         },
         "wikipedia": {
-          "type": "string"
+          "type": "string",
+		  "title": "Wikipedia stranica",
+		  "description": "link na wikipedia stranicu"
         },
-        "zanr": {
-          "type": "string"
+       "zanr": {
+          "type": "string",
+		  "title": "Zanr knjige",
+		  "description": "Zanr knjige"
         }
       },
       "required": [
@@ -260,10 +353,14 @@
       "type": "object",
       "properties": {
         "isbn": {
-          "type": "string"
+          "type": "string",
+		  "title": "Isbn",
+		  "description":"kljuc knjige"
         },
         "naziv_knjige": {
-          "type": "string"
+          "type": "string",
+		  "title": "Naziv Knjige",
+		  "description": "Naziv Knjige"
         },
         "autor": {
           "type": "array",
@@ -271,14 +368,20 @@
             {
               "type": "object",
               "properties": {
-                "Ime:": {
-                  "type": "string"
+                 "Ime:": {
+                  "type": "string",
+				  "title": "Ime autora",
+				  "description": "Ime autora knjige"
                 },
                 "Prezime:": {
-                  "type": "string"
+                   "type": "string",
+				  "title": "Prezime autora",
+				  "description": "Prezime autora knjige"
                 },
-                "datum:": {
-                  "type": "string"
+                 "datum:": {
+                  "type": "string",
+				  "title": "Datum",
+				  "description": "datum rodjenja autora"
                 }
               },
               "required": [
@@ -289,29 +392,45 @@
             }
           ]
         },
-        "drzava_nastanka": {
-          "type": "string"
+       "drzava_nastanka": {
+          "type": "string",
+		  "title:": "Drzava nastanka",
+		  "description": "Gdje je knjiga napisana"
         },
-        "jezik": {
-          "type": "string"
+       "jezik": {
+         "type": "string",
+		  "title": "Jezik",
+		  "description": "Jezik na kojem je knjiga napisana"
         },
-        "izdavacka_kuca": {
-          "type": "string"
+         "izdavacka_kuca": {
+         "type": "string",
+		  "title": "Izdavacka kuca",
+		  "description": "agencija koja je izdala knjigu"
         },
         "datum_izdavanja": {
-          "type": "string"
+          "type": "string",
+		  "title": "Datum izdavanja",
+		  "description": "datum izdavanja prve knjige"
         },
-        "broj_stranica": {
-          "type": "integer"
+         "broj_stranica": {
+          "type": "integer",
+		  "title": "Broj stranica",
+		  "description": "broj stranica knjige"
         },
-        "uvez": {
-          "type": "string"
+         "uvez": {
+          "type": "string",
+		  "title": "Uvez",
+		  "description": "vrsta uveza knjige"
         },
         "wikipedia": {
-          "type": "string"
+          "type": "string",
+		  "title": "Wikipedia stranica",
+		  "description": "link na wikipedia stranicu"
         },
-        "zanr": {
-          "type": "string"
+       "zanr": {
+          "type": "string",
+		  "title": "Zanr knjige",
+		  "description": "Zanr knjige"
         }
       },
       "required": [
@@ -332,10 +451,14 @@
       "type": "object",
       "properties": {
         "isbn": {
-          "type": "string"
+          "type": "string",
+		  "title": "Isbn",
+		  "description":"kljuc knjige"
         },
         "naziv_knjige": {
-          "type": "string"
+          "type": "string",
+		  "title": "Naziv Knjige",
+		  "description": "Naziv Knjige"
         },
         "autor": {
           "type": "array",
@@ -343,14 +466,20 @@
             {
               "type": "object",
               "properties": {
-                "Ime:": {
-                  "type": "string"
+                 "Ime:": {
+                  "type": "string",
+				  "title": "Ime autora",
+				  "description": "Ime autora knjige"
                 },
                 "Prezime:": {
-                  "type": "string"
+                   "type": "string",
+				  "title": "Prezime autora",
+				  "description": "Prezime autora knjige"
                 },
-                "datum:": {
-                  "type": "string"
+                 "datum:": {
+                  "type": "string",
+				  "title": "Datum",
+				  "description": "datum rodjenja autora"
                 }
               },
               "required": [
@@ -361,29 +490,144 @@
             }
           ]
         },
-        "drzava_nastanka": {
-          "type": "string"
+       "drzava_nastanka": {
+          "type": "string",
+		  "title": "Drzava nastanka",
+		  "description": "Gdje je knjiga napisana"
         },
-        "jezik": {
-          "type": "string"
+       "jezik": {
+         "type": "string",
+		  "title": "Jezik",
+		  "description": "Jezik na kojem je knjiga napisana"
         },
-        "izdavacka_kuca": {
-          "type": "string"
+         "izdavacka_kuca": {
+         "type": "string",
+		  "title": "Izdavacka kuca",
+		  "description": "agencija koja je izdala knjigu"
         },
         "datum_izdavanja": {
-          "type": "string"
+          "type": "string",
+		  "title": "Datum izdavanja",
+		  "description": "datum izdavanja prve knjige"
         },
         "broj_stranica": {
-          "type": "integer"
+          "type": "integer",
+		  "title": "Broj stranica",
+		  "description": "broj stranica knjige"
         },
-        "uvez": {
-          "type": "string"
+         "uvez": {
+          "type": "string",
+		  "title": "Uvez",
+		  "description": "vrsta uveza knjige"
         },
         "wikipedia": {
-          "type": "string"
+          "type": "string",
+		  "title": "Wikipedia stranica",
+		  "description": "link na wikipedia stranicu"
         },
         "zanr": {
-          "type": "string"
+          "type": "string",
+		  "title": "Zanr knjige",
+		  "description": "Zanr knjige"
+        }
+      },
+      "required": [
+        "isbn",
+        "naziv_knjige",
+        "autor",
+        "drzava_nastanka",
+        "jezik",
+        "izdavacka_kuca",
+        "datum_izdavanja",
+        "broj_stranica",
+        "uvez",
+        "wikipedia",
+        "zanr"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+       "isbn": {
+          "type": "string",
+		  "title": "Isbn",
+		  "description":"kljuc knjige"
+        },
+        },
+        "naziv_knjige": {
+          "type": "string",
+		  "title": "Naziv Knjige",
+		  "description": "Naziv Knjige"
+        },
+        "autor": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                 "Ime:": {
+                  "type": "string",
+				  "title": "Ime autora",
+				  "description": "Ime autora knjige"
+                },
+                "Prezime:": {
+                   "type": "string",
+				  "title": "Prezime autora",
+				  "description": "Prezime autora knjige"
+                },
+                 "datum:": {
+                  "type": "string",
+				  "title": "Datum",
+				  "description": "datum rodjenja autora"
+                }
+              },
+              "required": [
+                "Ime:",
+                "Prezime:",
+                "datum:"
+              ]
+            }
+          ]
+        },
+       "drzava_nastanka": {
+          "type": "string",
+		  "title": "Drzava nastanka",
+		  "description": "Gdje je knjiga napisana"
+        },
+       "jezik": {
+         "type": "string",
+		  "title": "Jezik",
+		  "description": "Jezik na kojem je knjiga napisana"
+        },
+        "izdavacka_kuca": {
+         "type": "string",
+		  "title": "Izdavacka kuca",
+		  "description": "agencija koja je izdala knjigu"
+        },
+         "datum_izdavanja": {
+          "type": "string",
+		  "title": "Datum izdavanja",
+		  "description": "datum izdavanja prve knjige"
+        },
+         "broj_stranica": {
+          "type": "integer",
+		  "title": "Broj stranica",
+		  "description": "broj stranica knjige"
+        },
+         "uvez": {
+          "type": "string",
+		  "title": "Uvez",
+		  "description": "vrsta uveza knjige"
+        },
+        "wikipedia": {
+          "type": "string",
+		  "title": "Wikipedia stranica",
+		  "description": "link na wikipedia stranicu"
+        },
+        "zanr": {
+          "type": "string",
+		  "title": "Zanr knjige",
+		  "description": "Zanr knjige"
         }
       },
       "required": [
@@ -404,10 +648,14 @@
       "type": "object",
       "properties": {
         "isbn": {
-          "type": "string"
+          "type": "string",
+		  "title": "Isbn",
+		  "description":"kljuc knjige"
         },
         "naziv_knjige": {
-          "type": "string"
+          "type": "string",
+		  "title": "Naziv Knjige",
+		  "description": "Naziv Knjige"
         },
         "autor": {
           "type": "array",
@@ -415,11 +663,65 @@
             {
               "type": "object",
               "properties": {
-                "Ime:": {
-                  "type": "string"
+                 "Ime:": {
+                  "type": "string",
+				  "title": "Ime autora",
+				  "description": "Ime autora knjige"
                 },
                 "Prezime:": {
-                  "type": "string"
+                   "type": "string",
+				  "title": "Prezime autora",
+				  "description": "Prezime autora knjige"
+                },
+                 "datum:": {
+                  "type": "string",
+				  "title": "Datum"
+				  "description": "datum rodjenja autora"
+                }
+              },
+              "required": [
+                "Ime:",
+                "Prezime:",
+                "datum:"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                 "Ime:": {
+                  "type": "string",
+				  "title": "Ime autora",
+				  "description": "Ime autora knjige"
+                },
+                "Prezime:": {
+                   "type": "string",
+				  "title": "Prezime autora",
+				  "description": "Prezime autora knjige"
+                },
+                 "datum:": {
+                  "type": "string",
+				  "title": "Datum"
+				  "description": "datum rodjenja autora"
+                }
+              },
+              "required": [
+                "Ime:",
+                "Prezime:",
+                "datum:"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                 "Ime:": {
+                  "type": "string",
+				  "title": "Ime autora",
+				  "description": "Ime autora knjige"
+                },
+                "Prezime:": {
+                   "type": "string",
+				  "title": "Prezime autora",
+				  "description": "Prezime autora knjige"
                 },
                 "datum:": {
                   "type": "string"
@@ -433,29 +735,45 @@
             }
           ]
         },
-        "drzava_nastanka": {
-          "type": "string"
+      "drzava_nastanka": {
+          "type": "string",
+		  "title:" "Drzava nastanka"
+		  "description": "Gdje je knjiga napisana"
         },
-        "jezik": {
-          "type": "string"
+       "jezik": {
+         "type": "string",
+		  "title:" "Jezik"
+		  "description": "Jezik na kojem je knjiga napisana"
         },
-        "izdavacka_kuca": {
-          "type": "string"
+         "izdavacka_kuca": {
+         "type": "string",
+		  "title:" "Izdavacka kuca"
+		  "description": "agencija koja je izdala knjigu"
         },
-        "datum_izdavanja": {
-          "type": "string"
+         "datum_izdavanja": {
+          "type": "string",
+		  "title": "Datum izdavanja"
+		  "description": "datum izdavanja prve knjige"
         },
-        "broj_stranica": {
-          "type": "integer"
+         "broj_stranica": {
+          "type": "integer",
+		  "title": "Broj stranica",
+		  "description": "broj stranica knjige"
         },
-        "uvez": {
-          "type": "string"
+         "uvez": {
+          "type": "string",
+		  "title:" "Uvez"
+		  "description": "vrsta uveza knjige"
         },
-        "wikipedia": {
-          "type": "string"
+       "wikipedia": {
+          "type": "string",
+		  "title:" "Wikipedia stranica"
+		  "description": "link na wikipedia stranicu"
         },
-        "zanr": {
-          "type": "string"
+       "zanr": {
+          "type": "string",
+		  "title:" "Zanr knjige",
+		  "description": "Zanr knjige"
         }
       },
       "required": [
@@ -476,10 +794,14 @@
       "type": "object",
       "properties": {
         "isbn": {
-          "type": "string"
+          "type": "string",
+		  "title": "Isbn",
+		  "description":"kljuc knjige"
         },
-        "naziv_knjige": {
-          "type": "string"
+         "naziv_knjige": {
+          "type": "string",
+		  "title": "Naziv Knjige",
+		  "description": "Naziv Knjige"
         },
         "autor": {
           "type": "array",
@@ -487,11 +809,40 @@
             {
               "type": "object",
               "properties": {
-                "Ime:": {
-                  "type": "string"
+                 "Ime:": {
+                  "type": "string",
+				  "title": "Ime autora",
+				  "description": "Ime autora knjige"
                 },
                 "Prezime:": {
-                  "type": "string"
+                   "type": "string",
+				  "title": "Prezime autora",
+				  "description": "Prezime autora knjige"
+                },
+                 "datum:": {
+                  "type": "string",
+				  "title": "Datum"
+				  "description": "datum rodjenja autora"
+                }
+              },
+              "required": [
+                "Ime:",
+                "Prezime:",
+                "datum:"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                 "Ime:": {
+                  "type": "string",
+				  "title": "Ime autora",
+				  "description": "Ime autora knjige"
+                },
+                "Prezime:": {
+                   "type": "string",
+				  "title": "Prezime autora",
+				  "description": "Prezime autora knjige"
                 },
                 "datum:": {
                   "type": "string"
@@ -506,14 +857,20 @@
             {
               "type": "object",
               "properties": {
-                "Ime:": {
-                  "type": "string"
+                 "Ime:": {
+                  "type": "string",
+				  "title": "Ime autora",
+				  "description": "Ime autora knjige"
                 },
-                "Prezime:": {
-                  "type": "string"
+               "Prezime:": {
+                   "type": "string",
+				  "title": "Prezime autora",
+				  "description": "Prezime autora knjige"
                 },
-                "datum:": {
-                  "type": "string"
+                 "datum:": {
+                  "type": "string",
+				  "title": "Datum"
+				  "description": "datum rodjenja autora"
                 }
               },
               "required": [
@@ -526,13 +883,169 @@
               "type": "object",
               "properties": {
                 "Ime:": {
-                  "type": "string"
+                  "type": "string",
+				  "title": "Ime autora",
+				  "description": "Ime autora knjige"
                 },
                 "Prezime:": {
-                  "type": "string"
+                   "type": "string",
+				  "title": "Prezime autora",
+				  "description": "Prezime autora knjige"
+                },
+                 "datum:": {
+                  "type": "string",
+				  "title": "Datum"
+				  "description": "datum rodjenja autora"
+                }
+              },
+              "required": [
+                "Ime:",
+                "Prezime:",
+                "datum:"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                 "Ime:": {
+                  "type": "string",
+				  "title": "Ime autora",
+				  "description": "Ime autora knjige"
+                },
+                "Prezime:": {
+                   "type": "string",
+				  "title": "Prezime autora",
+				  "description": "Prezime autora knjige"
+                },
+                 "datum:": {
+                  "type": "string",
+				  "title": "Datum"
+				  "description": "datum rodjenja autora"
+                }
+              },
+              "required": [
+                "Ime:",
+                "Prezime:",
+                "datum:"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                 "Ime:": {
+                  "type": "string",
+				  "title": "Ime autora",
+				  "description": "Ime autora knjige"
+                },
+                "Prezime:": {
+                   "type": "string",
+				  "title": "Prezime autora",
+				  "description": "Prezime autora knjige"
+                },
+                 "datum:": {
+                  "type": "string",
+				  "title": "Datum"
+				  "description": "datum rodjenja autora"
+                }
+              },
+              "required": [
+                "Ime:",
+                "Prezime:",
+                "datum:"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                 "Ime:": {
+                  "type": "string",
+				  "title": "Ime autora",
+				  "description": "Ime autora knjige"
+                },
+                "Prezime:": {
+                   "type": "string",
+				  "title": "Prezime autora",
+				  "description": "Prezime autora knjige"
                 },
                 "datum:": {
-                  "type": "string"
+                  "type": "string",
+				  "title": "Datum"
+				  "description": "datum rodjenja autora"
+                }
+              },
+              "required": [
+                "Ime:",
+                "Prezime:",
+                "datum:"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "Ime:": {
+                  "type": "string",
+				  "title": "Ime autora",
+				  "description": "Ime autora knjige"
+                },
+                "Prezime:": {
+                   "type": "string",
+				  "title": "Prezime autora",
+				  "description": "Prezime autora knjige"
+                },
+                 "datum:": {
+                  "type": "string",
+				  "title": "Datum"
+				  "description": "datum rodjenja autora"
+                }
+              },
+              "required": [
+                "Ime:",
+                "Prezime:",
+                "datum:"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                 "Ime:": {
+                  "type": "string",
+				  "title": "Ime autora",
+				  "description": "Ime autora knjige"
+                },
+                "Prezime:": {
+                   "type": "string",
+				  "title": "Prezime autora",
+				  "description": "Prezime autora knjige"
+                },
+                 "datum:": {
+                  "type": "string",
+				  "title": "Datum"
+				  "description": "datum rodjenja autora"
+                }
+              },
+              "required": [
+                "Ime:",
+                "Prezime:",
+                "datum:"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                 "Ime:": {
+                  "type": "string",
+				  "title": "Ime autora",
+				  "description": "Ime autora knjige"
+                },
+                "Prezime:": {
+                   "type": "string",
+				  "title": "Prezime autora",
+				  "description": "Prezime autora knjige"
+                },
+                 "datum:": {
+                  "type": "string",
+				  "title": "Datum"
+				  "description": "datum rodjenja autora"
                 }
               },
               "required": [
@@ -543,29 +1056,45 @@
             }
           ]
         },
-        "drzava_nastanka": {
-          "type": "string"
+       "drzava_nastanka": {
+          "type": "string",
+		  "title:" "Drzava nastanka"
+		  "description": "Gdje je knjiga napisana"
         },
         "jezik": {
-          "type": "string"
+         "type": "string",
+		  "title:" "Jezik"
+		  "description": "Jezik na kojem je knjiga napisana"
         },
         "izdavacka_kuca": {
-          "type": "string"
+         "type": "string",
+		  "title:" "Izdavacka kuca"
+		  "description": "agencija koja je izdala knjigu"
         },
-        "datum_izdavanja": {
-          "type": "string"
+         "datum_izdavanja": {
+          "type": "string",
+		  "title": "Datum izdavanja"
+		  "description": "datum izdavanja prve knjige"
         },
-        "broj_stranica": {
-          "type": "integer"
+         "broj_stranica": {
+          "type": "integer",
+		  "title": "Broj stranica",
+		  "description": "broj stranica knjige"
         },
-        "uvez": {
-          "type": "string"
+         "uvez": {
+          "type": "string",
+		  "title:" "Uvez"
+		  "description": "vrsta uveza knjige"
         },
         "wikipedia": {
-          "type": "string"
+          "type": "string",
+		  "title:" "Wikipedia stranica"
+		  "description": "link na wikipedia stranicu"
         },
         "zanr": {
-          "type": "string"
+          "type": "string",
+		  "title:" "Zanr knjige",
+		  "description": "Zanr knjige"
         }
       },
       "required": [
@@ -585,11 +1114,15 @@
     {
       "type": "object",
       "properties": {
-        "isbn": {
-          "type": "string"
+         "isbn": {
+          "type": "string",
+		  "title": "Isbn",
+		  "description":"kljuc knjige"
         },
         "naziv_knjige": {
-          "type": "string"
+          "type": "string",
+		  "title": "Naziv Knjige",
+		  "description": "Naziv Knjige"
         },
         "autor": {
           "type": "array",
@@ -597,185 +1130,20 @@
             {
               "type": "object",
               "properties": {
-                "Ime:": {
-                  "type": "string"
+                 "Ime:": {
+                  "type": "string",
+				  "title": "Ime autora",
+				  "description": "Ime autora knjige"
                 },
                 "Prezime:": {
-                  "type": "string"
+                   "type": "string",
+				  "title": "Prezime autora",
+				  "description": "Prezime autora knjige"
                 },
-                "datum:": {
-                  "type": "string"
-                }
-              },
-              "required": [
-                "Ime:",
-                "Prezime:",
-                "datum:"
-              ]
-            },
-            {
-              "type": "object",
-              "properties": {
-                "Ime:": {
-                  "type": "string"
-                },
-                "Prezime:": {
-                  "type": "string"
-                },
-                "datum:": {
-                  "type": "string"
-                }
-              },
-              "required": [
-                "Ime:",
-                "Prezime:",
-                "datum:"
-              ]
-            },
-            {
-              "type": "object",
-              "properties": {
-                "Ime:": {
-                  "type": "string"
-                },
-                "Prezime:": {
-                  "type": "string"
-                },
-                "datum:": {
-                  "type": "string"
-                }
-              },
-              "required": [
-                "Ime:",
-                "Prezime:",
-                "datum:"
-              ]
-            },
-            {
-              "type": "object",
-              "properties": {
-                "Ime:": {
-                  "type": "string"
-                },
-                "Prezime:": {
-                  "type": "string"
-                },
-                "datum:": {
-                  "type": "string"
-                }
-              },
-              "required": [
-                "Ime:",
-                "Prezime:",
-                "datum:"
-              ]
-            },
-            {
-              "type": "object",
-              "properties": {
-                "Ime:": {
-                  "type": "string"
-                },
-                "Prezime:": {
-                  "type": "string"
-                },
-                "datum:": {
-                  "type": "string"
-                }
-              },
-              "required": [
-                "Ime:",
-                "Prezime:",
-                "datum:"
-              ]
-            },
-            {
-              "type": "object",
-              "properties": {
-                "Ime:": {
-                  "type": "string"
-                },
-                "Prezime:": {
-                  "type": "string"
-                },
-                "datum:": {
-                  "type": "string"
-                }
-              },
-              "required": [
-                "Ime:",
-                "Prezime:",
-                "datum:"
-              ]
-            },
-            {
-              "type": "object",
-              "properties": {
-                "Ime:": {
-                  "type": "string"
-                },
-                "Prezime:": {
-                  "type": "string"
-                },
-                "datum:": {
-                  "type": "string"
-                }
-              },
-              "required": [
-                "Ime:",
-                "Prezime:",
-                "datum:"
-              ]
-            },
-            {
-              "type": "object",
-              "properties": {
-                "Ime:": {
-                  "type": "string"
-                },
-                "Prezime:": {
-                  "type": "string"
-                },
-                "datum:": {
-                  "type": "string"
-                }
-              },
-              "required": [
-                "Ime:",
-                "Prezime:",
-                "datum:"
-              ]
-            },
-            {
-              "type": "object",
-              "properties": {
-                "Ime:": {
-                  "type": "string"
-                },
-                "Prezime:": {
-                  "type": "string"
-                },
-                "datum:": {
-                  "type": "string"
-                }
-              },
-              "required": [
-                "Ime:",
-                "Prezime:",
-                "datum:"
-              ]
-            },
-            {
-              "type": "object",
-              "properties": {
-                "Ime:": {
-                  "type": "string"
-                },
-                "Prezime:": {
-                  "type": "string"
-                },
-                "datum:": {
-                  "type": "string"
+                 "datum:": {
+                  "type": "string",
+				  "title": "Datum"
+				  "description": "datum rodjenja autora"
                 }
               },
               "required": [
@@ -786,29 +1154,45 @@
             }
           ]
         },
-        "drzava_nastanka": {
-          "type": "string"
+       "drzava_nastanka": {
+          "type": "string",
+		  "title:" "Drzava nastanka"
+		  "description": "Gdje je knjiga napisana"
         },
-        "jezik": {
-          "type": "string"
+       "jezik": {
+         "type": "string",
+		  "title:" "Jezik"
+		  "description": "Jezik na kojem je knjiga napisana"
         },
-        "izdavacka_kuca": {
-          "type": "string"
+         "izdavacka_kuca": {
+         "type": "string",
+		  "title:" "Izdavacka kuca"
+		  "description": "agencija koja je izdala knjigu"
         },
         "datum_izdavanja": {
-          "type": "string"
+          "type": "string",
+		  "title": "Datum izdavanja"
+		  "description": "datum izdavanja prve knjige"
         },
         "broj_stranica": {
-          "type": "integer"
+          "type": "integer",
+		  "title": "Broj stranica",
+		  "description": "broj stranica knjige"
         },
-        "uvez": {
-          "type": "string"
+         "uvez": {
+          "type": "string",
+		  "title:" "Uvez"
+		  "description": "vrsta uveza knjige"
         },
-        "wikipedia": {
-          "type": "string"
+       "wikipedia": {
+          "type": "string",
+		  "title:" "Wikipedia stranica"
+		  "description": "link na wikipedia stranicu"
         },
         "zanr": {
-          "type": "string"
+          "type": "string",
+		  "title:" "Zanr knjige",
+		  "description": "Zanr knjige"
         }
       },
       "required": [
@@ -828,11 +1212,15 @@
     {
       "type": "object",
       "properties": {
-        "isbn": {
-          "type": "string"
+         "isbn": {
+          "type": "string",
+		  "title": "Isbn",
+		  "description":"kljuc knjige"
         },
         "naziv_knjige": {
-          "type": "string"
+          "type": "string",
+		  "title": "Naziv Knjige",
+		  "description": "Naziv Knjige"
         },
         "autor": {
           "type": "array",
@@ -840,14 +1228,20 @@
             {
               "type": "object",
               "properties": {
-                "Ime:": {
-                  "type": "string"
+                 "Ime:": {
+                  "type": "string",
+				  "title": "Ime autora",
+				  "description": "Ime autora knjige"
                 },
                 "Prezime:": {
-                  "type": "string"
+                   "type": "string",
+				  "title": "Prezime autora",
+				  "description": "Prezime autora knjige"
                 },
-                "datum:": {
-                  "type": "string"
+                 "datum:": {
+                  "type": "string",
+				  "title": "Datum"
+				  "description": "datum rodjenja autora"
                 }
               },
               "required": [
@@ -859,100 +1253,44 @@
           ]
         },
         "drzava_nastanka": {
-          "type": "string"
+          "type": "string",
+		  "title:" "Drzava nastanka"
+		  "description": "Gdje je knjiga napisana"
         },
         "jezik": {
-          "type": "string"
+         "type": "string",
+		  "title:" "Jezik"
+		  "description": "Jezik na kojem je knjiga napisana"
         },
         "izdavacka_kuca": {
-          "type": "string"
+         "type": "string",
+		  "title:" "Izdavacka kuca"
+		  "description": "agencija koja je izdala knjigu"
         },
         "datum_izdavanja": {
-          "type": "string"
+          "type": "string",
+		  "title": "Datum izdavanja"
+		  "description": "datum izdavanja prve knjige"
         },
-        "broj_stranica": {
-          "type": "integer"
+         "broj_stranica": {
+          "type": "integer",
+		  "title": "Broj stranica",
+		  "description": "broj stranica knjige"
         },
-        "uvez": {
-          "type": "string"
-        },
-        "wikipedia": {
-          "type": "string"
-        },
-        "zanr": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "isbn",
-        "naziv_knjige",
-        "autor",
-        "drzava_nastanka",
-        "jezik",
-        "izdavacka_kuca",
-        "datum_izdavanja",
-        "broj_stranica",
-        "uvez",
-        "wikipedia",
-        "zanr"
-      ]
-    },
-    {
-      "type": "object",
-      "properties": {
-        "isbn": {
-          "type": "string"
-        },
-        "naziv_knjige": {
-          "type": "string"
-        },
-        "autor": {
-          "type": "array",
-          "items": [
-            {
-              "type": "object",
-              "properties": {
-                "Ime:": {
-                  "type": "string"
-                },
-                "Prezime:": {
-                  "type": "string"
-                },
-                "datum:": {
-                  "type": "string"
-                }
-              },
-              "required": [
-                "Ime:",
-                "Prezime:",
-                "datum:"
-              ]
-            }
-          ]
-        },
-        "drzava_nastanka": {
-          "type": "string"
-        },
-        "jezik": {
-          "type": "string"
-        },
-        "izdavacka_kuca": {
-          "type": "string"
-        },
-        "datum_izdavanja": {
-          "type": "string"
-        },
-        "broj_stranica": {
-          "type": "integer"
-        },
-        "uvez": {
-          "type": "string"
+         "uvez": {
+          "type": "string",
+		  "title:" "Uvez"
+		  "description": "vrsta uveza knjige"
         },
         "wikipedia": {
-          "type": "string"
+          "type": "string",
+		  "title:" "Wikipedia stranica"
+		  "description": "link na wikipedia stranicu"
         },
         "zanr": {
-          "type": "string"
+          "type": "string",
+		  "title:" "Zanr knjige",
+		  "description": "Zanr knjige"
         }
       },
       "required": [
