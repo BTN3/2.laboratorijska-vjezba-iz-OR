@@ -1,0 +1,45 @@
+[
+  {
+    "isbn": "978-0-670-69199-9",
+    "naziv_knjige": "The Talisman",
+    "autor": [
+      {
+        "Ime:": "Stephen",
+        "Prezime:": "King",
+        "datum:": "1947-09-21"
+      },
+      {
+        "Ime:": "Peter",
+        "Prezime:": "Straub",
+        "datum:": "1943-03-02"
+      }
+    ],
+    "drzava_nastanka": "USA",
+    "jezik": "engleski",
+    "izdavacka_kuca": "Pocket Books",
+    "datum_izdavanja": "2012-09-25",
+    "broj_stranica": 785,
+    "uvez": "tvrdi",
+    "wikipedia": "The_Talisman_(King_and_Straub_novel)",
+    "zanr": "roman"
+  },
+  {
+    "isbn": "978-1-982110-56-7",
+    "naziv_knjige": "The Institute",
+    "autor": [
+      {
+        "Ime:": "Stephen",
+        "Prezime:": "King",
+        "datum:": "1947-09-21"
+      }
+    ],
+    "drzava_nastanka": "USA",
+    "jezik": "engleski",
+    "izdavacka_kuca": "Scribner",
+    "datum_izdavanja": "2019-09-10",
+    "broj_stranica": 576,
+    "uvez": "tvrdi",
+    "wikipedia": "Becoming_(book)",
+    "zanr": "horor roman"
+  }
+]
