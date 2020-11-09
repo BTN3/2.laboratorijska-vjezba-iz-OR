@@ -40,12 +40,7 @@ router.get('/', async function (req, res, next) {
    // res.render("order", {title: 'An Ajax Example', quote: "AJAX is great!"});
 });
 router.post('/',async function(req,res,next){//middlewere, dohavt podataka i bacanje podataka u bazu
- /* const Knjige = `SELECT isbn,naziv_knjige,drzava_nastanka,jezik,izdavacka_kuca, EXTRACT(YEAR from datum_izdavanja) as datum,broj_stranica,uvez,wikipedia,zanr FROM knjiga`;
-  const autor = `SELECT ime,prezime,EXTRACT(YEAR from datum_rodjenja) as datum_rodjenja,naziv_knjige FROM autor`;
-  KnjigeLista = (await db.query(Knjige, [])).rows;
-  autorLista = (await db.query(autor, [])).rows;*/
-
-
+ 
     let ime = req.body.ArtiklIme;
       //console.log(JSON.stringify(req.body));
       let input = req.body.quote;
